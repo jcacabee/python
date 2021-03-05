@@ -1,19 +1,15 @@
-from myMath import myArithmetic,myCalcArea,myStatistics
+from myMath import myStatistics as ST
 
-def myAdd(x, y,z,a,b):
-    return x + y+z+a+b
+a=int(input('第1個數:'))
 
-def myMean( A):
-  sum = 0
-  N = 0
-  for i in A:
-    sum += i
-    N += 1
-  if N > 0:
-    return sum/N
-  if N == 0:
-    return False
+b=int(input('第2個數:'))
 
-arr = [1, 1, 1, 2]
+c=int(input('第3個數:'))
 
-print(myStatistics.myMean(arr))
+d=int(input('第4個數:'))
+
+e=int(input('第5個數:'))
+
+arr=[a,b,c,d,e]
+print('平均數為:',ST.myMean(arr))
+      
